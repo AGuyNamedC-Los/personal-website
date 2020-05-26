@@ -36,3 +36,370 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	overflow-x:hidden;
+}
+
+main {
+	font-family: Times;
+	font-weight: normal;
+	border: solid;
+}
+
+main h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+main h2 {
+	text-align: center;
+	font-size: 35px;
+}
+
+main p {
+	font-size: 30px;
+}
+
+/* --------------------- Menu Bar --------------------- */
+.menu {
+	background: #43498c;
+	text-align: center;
+	padding: 5% 0px 5%;
+	border: solid;
+	margin-bottom: 0px;
+}
+
+/* the main menu buttons*/
+.dropbtn {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: white;
+	margin: 10px;
+	border: solid;
+	border-color: black;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #3498db;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+/* picture inside of the main menu buttons*/
+.dropbtn i{
+	margin: 20px 10px 10px;
+	font-size: 50px;
+	color: #434db9;
+}
+
+/* picture when hovering over the main menu buttons*/
+.dropbtn:hover i {
+	color: red;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: red;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* text of the drop down menu*/
+.dropdown-content a {
+  color: #434db9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* hovering over the links of the sub menu*/
+.dropdown-content a:hover {
+	color: red;
+	cursor: pointer;
+}
+
+/*the links that show when hovering over the main buttons*/
+.dropdown:hover .dropdown-content {
+	display: block;
+	text-align: center;
+	border-radius: 20%;
+	background: white;
+	border: solid;
+	border-color: black;
+	color: red;
+	overflow: hidden;
+	position: sticky;
+}
+
+/*hovering over the main button*/
+.dropdown:hover .dropbtn {
+	background-color: #white;
+}
+
+/* --------------------- Home Page --------------------- */
+.home {
+	margin: 0px 0px 0px;	/* top, left and right, bottom */
+	border: solid;
+}
+
+.bitmoji {
+	text-align: center;
+}
+
+.my_name {
+	text-align: center;
+	font-size: 60px;
+}
+
+.about_me {
+	margin: 5% 30% 5%;
+}
+
+.about_me h2 {
+	/* float: left; */
+}
+
+.about_me p {
+	/* clear: left; */
+}
+
+.contact_me {
+	text-align: center;
+	font-size: 30px;
+	margin: 5% 0% 5%;
+}
+
+.contact_me .copybtn:hover {
+	color: red;
+}
+
+ul {
+	list-style: none;
+}
+
+.contact_me a {
+	display: inline-block;
+	margin: 10px 20px 10px;
+	background: white;
+	border: solid;
+	border-color: black;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #434db9;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.contact_me_btns a p {
+	margin: 10px 10px 10px;
+}
+
+/*
+.contact_me_btns {
+	display: block;
+}
+
+.contact_me_btns a {
+	display: inline-block;
+	background: white;
+	border: solid;
+	border-color: black;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #434db9;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+.email_btn p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.email_btn {
+	text-decoration: none;
+}
+
+.email_btn:nth-child(2) {
+	text-align: center;
+	margin: 0% 42% 0%;
+}
+
+.email_btn:nth-child(3) {
+	display: block;
+	text-align: center;
+	margin: 1% 32% 0px;
+}
+
+*/
+
+.contact_me_btns p i {
+	margin-left: 10px;
+	color: #434db9;
+}
+
+.contact_me_btns p:hover {
+	color: red;
+}
+
+.contact_me_btns i:hover {
+	color: red;
+}
+
+/* --------------------- Projects page --------------------- */
+.Projects {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: solid;
+}
+
+.Projects p {
+
+}
+
+.Projects a {
+	display: inline-block;
+	margin: 10px 20px 10px;
+	background: white;
+	border: solid;
+	border-color: black;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #434db9;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+.Projects a:hover {
+	color: red;
+}
+
+.Projects a p {
+	margin: 10px 10px 10px;
+}
+
+.browser_projects_menu, .data_structure_menu, .algorithm_menu, .miscellaneous_menu{
+	list-style: none;
+	text-align: center;
+	font-size: 30px;
+}
+
+/*
+.browser_projects_menu a:not(:last-child){
+	margin-bottom: 20px;
+	border: solid;
+}
+
+.browser_projects_menu a:last-child{
+	border: solid;
+}
+
+*/
+
+/* --------------------- SB Mockify page --------------------- */
+.sbmockify .sbmockify_gui {
+	text-align: center;
+}
+
+.sbmockify textarea {
+	height: 400px;
+	width: 600px;
+}
+
+.sb_btns a {
+	display: inline-block;
+	margin: 20px 20px 0px;	/* top, left and right, bottom */
+	width: 80px;
+	background: white;
+	border: solid;
+	border-color: black;
+	border-radius: 20%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #434db9;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.sb_btns p {
+	font-size: 20px;
+}
+
+.sb_btns a:hover p {
+	color: red;
+}
+
+.sbm_description {
+	margin: 100px 150px 100px;
+}
+
+.sbm_description img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid;
+}
+
+.sbm_code {
+	text-align: center;
+}
+
+.sbm_code a {
+	display: inline-block;
+	margin: 0px 20px 40px;	/* top, left and right, bottom */
+	width: 300px;
+	background: white;
+	border: solid;
+	border-color: black;
+	border-radius: 20%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #434db9;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.sbm_code a:hover p {
+	color: red;
+}
+
+.sbmockify a p {
+	text-align: center;
+}
+
+.bottom_page {
+	border: solid;
+	position: relative;
+	padding: 100px 0px 100px;
+	background-color: #434db9;
+}
+
+/*
+.bottom_page{
+	border:solid;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	padding-top: 200px;
+	height: 100px;
+	width: 100%;
+	background-color: #434db9;
+	text-align: center;
+} */
