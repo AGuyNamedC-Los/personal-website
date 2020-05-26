@@ -46,9 +46,9 @@ class MainApp extends React.Component {
 				</div>
 				{/* Resume buttons */}
 				<div className="dropdown">
-					<a className="dropbtn" onClick={this.linkHandler.bind(this, "https://docs.google.com/document/d/17TLjvQfhGAJ_DN9jOAKdODw-SwgxQmaO2SEo6q9rRRY/edit")}><i className="fas fa-user-tie"></i></a>
+					<a className="dropbtn" onClick={this.linkHandler.bind(this, "https://docs.google.com/document/d/1jhx5nGisrg1QM94ljY80rpnkrMigrMr5ChgqdfkI13w/edit")}><i className="fas fa-user-tie"></i></a>
 					<div className="dropdown-content">
-						<a className="sub_btn" onClick={this.linkHandler.bind(this, "https://docs.google.com/document/d/17TLjvQfhGAJ_DN9jOAKdODw-SwgxQmaO2SEo6q9rRRY/edit")}>Resume</a>
+						<a className="sub_btn" onClick={this.linkHandler.bind(this, "https://docs.google.com/document/d/1jhx5nGisrg1QM94ljY80rpnkrMigrMr5ChgqdfkI13w/edit")}>Resume</a>
 					</div>
 				</div>
 				{/* Project buttons */}
