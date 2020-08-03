@@ -1,7 +1,7 @@
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import './temp.css';
 import MainApp from "./MainApp.js";
 
 
@@ -16,10 +16,8 @@ class App extends Component {
 		switch (this.state.show) {
             case 'MainApp':
                 return <MainApp />;
-                break;
             default:
                 return <h2>Some type of problem!</h2>;
-				break;
         }
 	}
 }

@@ -11,9 +11,7 @@ class MainApp extends React.Component {
         this.state = {showing: "Home"};
     }
 	
-	webPageHandler(webPage) {
-		this.setState({showing: webPage});
-	}
+	webPageHandler(webPage) { this.setState({showing: webPage}); }
 	
 	linkHandler(url) {
 		var win = window.open(url, '_blank');
@@ -23,53 +21,41 @@ class MainApp extends React.Component {
     render() {
 		let menu = 
 			<div className="menu">
-				{/* Home buttons */}
-				<div className="dropdown">
-					<a className="dropbtn" onClick={this.webPageHandler.bind(this, "Home")}><i className="fas fa-home"></i></a>
-					<div className="dropdown-content">
-						<a className="sub_btn" onClick={this.webPageHandler.bind(this, "Home")}>Home</a>
-					</div>
-				</div>
-				{/* LinkedIn buttons */}
-				<div className="dropdown">
-					<a className="dropbtn" onClick={this.linkHandler.bind(this, "https://www.linkedin.com/in/carlos-castillo-1363a6133/")}><i className="fab fa-linkedin"></i></a>
-					<div className="dropdown-content">
-						<a className="sub_btn" onClick={this.linkHandler.bind(this, "https://www.linkedin.com/in/carlos-castillo-1363a6133/")}>LinkedIn</a>
-					</div>
-				</div>
-				{/* GitHub buttons */}
-				<div className="dropdown">
-					<a className="dropbtn" onClick={this.linkHandler.bind(this, "https://github.com/AGuyNamedC-Los")}><i className="fab fa-github-square"></i></a>
-					<div className="dropdown-content">
-						<a className="sub_btn" onClick={this.linkHandler.bind(this, "https://github.com/AGuyNamedC-Los")}>GitHub</a>
-					</div>
-				</div>
-				{/* Resume buttons */}
-				<div className="dropdown">
-					<a className="dropbtn" onClick={this.linkHandler.bind(this, "https://docs.google.com/document/d/1Jd-ctheSVN7MlFSQ9PXLvrzWbI31V0FqEhJBPj1GQ48/edit")}><i className="fas fa-user-tie"></i></a>
-					<div className="dropdown-content">
-						<a className="sub_btn" onClick={this.linkHandler.bind(this, "https://docs.google.com/document/d/1Jd-ctheSVN7MlFSQ9PXLvrzWbI31V0FqEhJBPj1GQ48/edit")}>Resume</a>
-					</div>
-				</div>
-				{/* Project buttons */}
-				<div className="dropdown">
-					<a className="dropbtn" onClick={this.webPageHandler.bind(this, "Projects")}><i className="fas fa-project-diagram"></i></a>
-					<div className="dropdown-content">
-						<a className="sub_btn" onClick={this.webPageHandler.bind(this, "Projects")}>Projects</a>
-					</div>
-				</div>
-				{/* Instagram buttons */}
-				<div className="dropdown">
-					<a className="dropbtn" onClick={this.linkHandler.bind(this, "https://www.instagram.com/aguynamedc_los/")}><i className="fab fa-instagram"></i></a>
-					<div className="dropdown-content">
-						<a className="sub_btn" onClick={this.linkHandler.bind(this, "https://www.instagram.com/aguynamedc_los/")}>Instagram</a>
-					</div>
-				</div>
+				{/* Home button */}
+				<a onClick={this.webPageHandler.bind(this, "Home")}>
+					<i className="fas fa-home"></i>
+					<p>Home</p>
+				</a>
+				{/* LinkedIn button */}
+				<a onClick={this.linkHandler.bind(this, "https://www.linkedin.com/in/carlos-castillo-1363a6133/")}>
+					<i className="fab fa-linkedin"></i>
+					<p>LinkedIn</p>
+				</a>
+				{/* Github button */}
+				<a onClick={this.linkHandler.bind(this, "https://github.com/AGuyNamedC-Los")}>
+					<i className="fab fa-github-square"></i>
+					<p>GitHub</p>
+				</a>
+				{/* Resume */}
+				<a onClick={this.linkHandler.bind(this, "https://docs.google.com/document/d/1Jd-ctheSVN7MlFSQ9PXLvrzWbI31V0FqEhJBPj1GQ48/edit")}>
+					<i className="fas fa-user-tie"></i>
+					<p>Resume</p>
+				</a>
+				{/* Projects */}
+				<a onClick={this.webPageHandler.bind(this, "Projects")}>
+					<i className="fas fa-project-diagram"></i>
+					<p>Projects</p>
+				</a>
+				{/* Instagram */}
+				<a onClick={this.linkHandler.bind(this, "https://www.instagram.com/aguynamedc_los/")}>
+					<i className="fab fa-instagram"></i>
+					<p>Instagram</p>
+				</a>
 			</div>;
 
         let content = <Home />;
 			
-		switch(this.state.showing){
+		switch(this.state.showing) {
 			case "Home":
 				content = <Home />;
 				break;
