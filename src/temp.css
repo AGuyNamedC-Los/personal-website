@@ -146,11 +146,19 @@ hr {
     flex-direction: column;
 }
 
-.sb_mockify a{
+.sb_mockify a {
     border: solid;
     border-radius: 10px;
     margin: .5% 45%
 }
+
+.sb_mockify span {
+    color: #7543E3;
+}
+
+.sb_mockify a:hover { cursor: pointer; }
+
+.sb_mockify a:hover > span { color: #E02950 }
 
 .sb_mockify p {
     margin: 0% 20%;
@@ -158,8 +166,10 @@ hr {
 }
 
 .github {
-    padding: .5% .5%;
-    margin: 5px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
+
 
 
