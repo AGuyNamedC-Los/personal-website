@@ -1,0 +1,133 @@
+body {
+    font-family: 'Zilla Slab', serif;
+    text-align: center;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ======= MENU ======= */
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 1% 0%;
+    background-color: #7543E3;
+}
+
+.menu a {
+    border: solid;
+    border-radius: 10px;
+    text-align: center;
+    padding: .5% 1% 0%;
+    margin: 0% 0.5%;
+    background-color: white;
+}
+
+.menu a:hover {cursor: pointer;}
+
+.menu a:hover > i, .menu a:hover > p { color: #E02950; } 
+
+.menu i {
+    color: #7543E3;
+    font-size: 50px;
+}
+
+.menu p {
+    font-weight: bold;
+    color: #7543E3;
+}
+
+/* ======= HOMEPAGE ======= */
+.home p {
+    margin: 0% 20%;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.about_me span {
+    margin: 5px 20%;
+    font-size: 23px;
+}
+
+hr {
+    margin: 0% 16%;
+    border: none;
+    height: 4px;
+    background-color: black;
+}
+
+.contact_me_btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_me_btns a {
+    display: flex;
+    justify-content: left;
+    border: solid;
+    margin: .5% 30%;
+    padding: .75% 0%;
+    text-decoration: none;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.contact_me_btns i {
+    color: #7543E3;
+    padding: 0% 5%;
+    padding-top: 0%;
+    font-size: 20px;
+}
+
+.contact_me_btns span {
+    font-size: 20px;
+    color: #7543E3;
+    font-weight: bold;
+}
+
+.contact_me_btns:hover { cursor: pointer; }
+
+.contact_me_btns a:hover > span, .contact_me_btns a:hover > i { color: #E02950; } 
+
+.bottom {
+    padding: 5% 0%;
+    background-color: #7543E3;
+    flex-shrink: 0;
+}
+
+/* ======= PROJECTS ======= */
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects div {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects div a {
+    border: solid;
+    margin: .5% 40%;
+    padding: .5% 0%;
+    border-radius: 10px;
+}
+
+.projects div a span {
+    font-size: 20px;
+    color: #7543E3;
+}
+
+.projects div a:hover {
+    cursor: pointer;
+    color: #E02950;
+}
+
+.projects div a:hover > span {
+    cursor: pointer;
+    color: #E02950;
+}
