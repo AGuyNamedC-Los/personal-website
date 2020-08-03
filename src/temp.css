@@ -38,13 +38,9 @@ body {
 }
 
 /* ======= HOMEPAGE ======= */
-h2 {
-    margin-top: 2%;
-}
+h2 { margin-top: 2%; }
 
-br {
-    margin: 2% 0%;
-}
+br {  margin: 2% 0%; }
 
 .about_me {
     display: flex;
@@ -159,9 +155,7 @@ hr {
     padding: .25% 0%;
 }
 
-.sb_mockify span {
-    color: #7543E3;
-}
+.sb_mockify span { color: #7543E3; }
 
 .sb_mockify a:hover { cursor: pointer; }
 
