@@ -38,8 +38,12 @@ body {
 }
 
 /* ======= HOMEPAGE ======= */
-.home p {
-    margin: 0% 20%;
+h2 {
+    margin-top: 2%;
+}
+
+br {
+    margin: 2% 0%;
 }
 
 .about_me {
@@ -49,7 +53,7 @@ body {
 
 .about_me span {
     justify-content: left;
-    margin: 5px 20%;
+    margin: 10px 25%;
     font-size: 23px;
 }
 
