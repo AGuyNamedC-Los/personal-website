@@ -79,8 +79,6 @@ class MainApp extends React.Component {
 					{menu}
 				</nav>
 				{content}
-				<div class="bottom_page">
-				</div>
 			</div>);
     }
 }

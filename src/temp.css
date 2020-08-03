@@ -119,6 +119,7 @@ hr {
 .projects div a span {
     font-size: 20px;
     color: #7543E3;
+    font-weight: bold;
 }
 
 .projects div a:hover {
@@ -134,6 +135,7 @@ hr {
 /* ======= SBMOCKIFY ======= */
 .sb_mockify span {
     font-size: 20px;
+    font-weight: bold;
 }
 
 .sb_mockify textarea {
@@ -149,7 +151,8 @@ hr {
 .sb_mockify a {
     border: solid;
     border-radius: 10px;
-    margin: .5% 45%
+    margin: .25% 45%;
+    padding: .25% 0%;
 }
 
 .sb_mockify span {
