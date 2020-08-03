@@ -29,7 +29,6 @@ class Home extends React.Component {
 						recently been enfatuated in this field for about 3 years from when 
 						I switched from being a kinesiology major (yeah I dont why I chose that either...).
 					</span>
-					<span></span>
 					<span>  
 						If I'm not working out or playing video games then I'm probably entranced 
 						in my own world, programming away. I'm not very picky in what I like to program 

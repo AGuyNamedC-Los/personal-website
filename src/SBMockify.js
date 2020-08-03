@@ -36,31 +36,35 @@ class SBMockify extends React.Component {
 	
     render() {
 		let content = 
-		<div>
+		<div className="sb_mockify">
 			<h1>SB Mockify</h1>
-			<div className="sbmockify_gui">
-				<textarea spellCheck="false" value={this.state.text} onChange={this.userInput.bind(this)}></textarea>
-				<div className="sb_btns">
-					<CopyToClipboard text={this.state.text}
-						onCopy={() => this.setState({copied: true})}>
-						{this.state.copied ? <a className="copybtn"><p>Copied</p></a> : <a className="copybtn"><p>Copy</p></a>}
-					</CopyToClipboard>
-					<a onClick={this.mockify.bind(this)}><p>Mockify</p></a>
-				</div>
+			<textarea spellCheck="false" value={this.state.text} onChange={this.userInput.bind(this)}></textarea>
+			<div className="sb_btns">
+				<CopyToClipboard text={this.state.text}
+					onCopy={() => this.setState({copied: true})}>
+					{this.state.copied ? <a className="copybtn"><span>Copied</span></a> : <a className="copybtn"><span>Copy</span></a>}
+				</CopyToClipboard>
+				<a onClick={this.mockify.bind(this)}><span>Mockify</span></a>
 			</div>
 			
-			<div className="sbm_description">
-				<h2>What is this?</h2>
-				<p className="description">Inspired by the Spongebob Meme that mimicks what a person types by retyping what that person says in an obnoxious 
-				upper and lower case format. SB Mockify allows you to easily type in what you want to be SB Mockified and copied to your clipboard without
-				the need to tediously alternate between upper and lower case letters as you type.</p>
-				<img src="https://i.imgflip.com/3lhvk1.jpg" title="made at imgflip.com"/>
-			</div>
+			<br></br>
+			<hr></hr>
+
+			<h2>What is this?</h2>
+			<p className="sb_description">Inspired by the Spongebob Meme that mimicks what a person types by retyping what that person says in an obnoxious 
+			upper and lower case format. SB Mockify allows you to easily type in what you want to be SB Mockified and copied to your clipboard without
+			the need to tediously alternate between upper and lower case letters as you type.</p>
+			<br></br>
+			<img src="https://i.imgflip.com/3lhvk1.jpg" title="made at imgflip.com"/>
+			<p></p>
 			
-			<div className="sbm_code">
-				<h2>Want to see how this was made? Click the Link Below!</h2>
-				<a onClick={this.linkHandler.bind(this, "https://github.com/AGuyNamedC-Los/personal_website/blob/master/SBMockify.js")}><p>SB Mockify code</p></a>
-			</div>
+			<br></br>
+			<hr></hr>
+
+			<h2>Want to see how this was made? Click the Link Below!</h2>
+			<a className="github" onClick={this.linkHandler.bind(this, "https://github.com/AGuyNamedC-Los/personal_website/blob/master/SBMockify.js")}><span>SB Mockify code</span></a>
+			<br></br>
+			<div className="bottom"></div>
 		</div>;
 
 		return (

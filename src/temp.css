@@ -45,10 +45,10 @@ body {
 .about_me {
     display: flex;
     flex-direction: column;
-    justify-content: left;
 }
 
 .about_me span {
+    justify-content: left;
     margin: 5px 20%;
     font-size: 23px;
 }
@@ -96,7 +96,6 @@ hr {
 .bottom {
     padding: 5% 0%;
     background-color: #7543E3;
-    flex-shrink: 0;
 }
 
 /* ======= PROJECTS ======= */
@@ -131,3 +130,36 @@ hr {
     cursor: pointer;
     color: #E02950;
 }
+
+/* ======= SBMOCKIFY ======= */
+.sb_mockify span {
+    font-size: 20px;
+}
+
+.sb_mockify textarea {
+    height: 200px;
+	width: 600px;
+}
+
+.sb_btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.sb_mockify a{
+    border: solid;
+    border-radius: 10px;
+    margin: .5% 45%
+}
+
+.sb_mockify p {
+    margin: 0% 20%;
+    font-size: 20px;
+}
+
+.github {
+    padding: .5% .5%;
+    margin: 5px 0px;
+}
+
+
