@@ -74,12 +74,18 @@ body {
 .about_me p {
     margin: 0 auto;
     text-align: left;
-    padding: 0% 130px;
-    font-size: 1.3rem;
 }
 
 span {
     font-size: 1.3rem;
+}
+
+@media screen and (min-width: 1201px) {
+    .about_me p {
+        padding: 0 130px;
+        max-width: 950px;
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
