@@ -40,6 +40,7 @@ class Projects extends React.Component {
 			
 			<div className= "algorithm_projects">
 				<h2>Algorithm Projects</h2>
+				<a onClick={this.linkHandler.bind(this, "https://pathfinder-interactive.herokuapp.com/")}><span>Interactive Pathfinder</span></a>
 			</div>
 		</div>
 		

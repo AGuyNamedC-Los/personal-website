@@ -37,7 +37,7 @@ class MainApp extends React.Component {
 					<p>GitHub</p>
 				</a>
 				{/* Resume */}
-				<a onClick={this.linkHandler.bind(this, "https://docs.google.com/document/d/1Jd-ctheSVN7MlFSQ9PXLvrzWbI31V0FqEhJBPj1GQ48/edit")}>
+				<a onClick={this.linkHandler.bind(this, "https://docs.google.com/document/d/1K-3VK16w9j0yWRLB88lPVZMlzlR8DVcQ9ZDwyTef5oM/edit")}>
 					<i className="fas fa-user-tie"></i>
 					<p>Resume</p>
 				</a>
