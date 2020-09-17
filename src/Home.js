@@ -15,6 +15,8 @@ class Home extends React.Component {
     render() {
 		return ( 
 		<div className="home">
+			<a id="current-portfolio" href="https://carlos-castillo-portfolio.herokuapp.com/">Please visit my new and updated portfolio website!</a>
+			<br></br>
 			<img src={bitmoji} alt="bitmoji"/>
 			<h1 className="my_name">I'm Carlos Castillo</h1>
 			<hr></hr>

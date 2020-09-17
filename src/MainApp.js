@@ -46,11 +46,6 @@ class MainApp extends React.Component {
 					<i className="fas fa-project-diagram"></i>
 					<p>Projects</p>
 				</a>
-				{/* Instagram */}
-				<a onClick={this.linkHandler.bind(this, "https://www.instagram.com/aguynamedc_los/")}>
-					<i className="fab fa-instagram"></i>
-					<p>Instagram</p>
-				</a>
 			</div>;
 
         let content = <Home />;

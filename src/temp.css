@@ -4,6 +4,21 @@ body {
     margin: 0 auto;
 }
 
+#current-portfolio {
+    display: block;
+    background-color: white;
+    flex-direction: column;
+    border-radius: .625rem;
+    border: solid;
+    max-width: 400px;
+    margin: 30px auto;
+    text-decoration: none;
+    font-size: 2rem;
+    border-color: black;
+    color: #7543E3;
+
+}
+
 /* ======= MENU ======= */
 
 .menu2 {
